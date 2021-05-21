@@ -8,9 +8,9 @@ This project provides some extensions for Istio and Envoy.
 
 1. Add this project as a dependency to the `WORKSPACE` file of the Istio proxy.
 ```bazel
-EXTENSIONS_SHA = "4da7b39cf02aa1347f3d405be8efed36c968479d"
+EXTENSIONS_SHA = "19fee7e63c6d09956b70c43f2bea205b0f6952f4"
 
-EXTENSIONS_SHA256 = "da5d8e3b6a1e5ff47f33249011a2f6c9837764b6f46ef177d8f5813b68cedfa2"
+EXTENSIONS_SHA256 = "ceec1d7d187e4a115baf6c771d95e08d83a6d13ef3b023ebb0c797b300924d24"
 
 EXTENSIONS_ORG = "aeraki-framework"
 
