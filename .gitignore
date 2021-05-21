@@ -1,0 +1,12 @@
+/bazel-*
+.idea/*
+*.iml
+*.swp
+*.test
+/artifacts
+clang.bazelrc
+user.bazelrc
+compile_commands.json
+*.wasm
+.vscode
+out/
