@@ -17,7 +17,7 @@ EXTENSIONS_ORG = "aeraki-framework"
 EXTENSIONS_REPO = "proxy-extensions"
 
 http_archive(
-    name = "proxy-extensions",
+    name = "aeraki-extensions",
     sha256 = EXTENSIONS_SHA256,
     strip_prefix = EXTENSIONS_REPO + "-" + EXTENSIONS_SHA,
     url = "https://github.com/" + EXTENSIONS_ORG + "/" + EXTENSIONS_REPO + "/archive/" + EXTENSIONS_SHA + ".tar.gz",
@@ -45,7 +45,7 @@ envoy_cc_binary(
         "//src/envoy/tcp/tcp_cluster_rewrite:config_lib",
 
         # add deps here
-        "@proxy-extensions//src/extensions/network/dubbo_rbac:config_lib",
+        "@aeraki-extensions//src/extensions/network/dubbo_rbac:config_lib",
         "@envoy//source/exe:envoy_main_entry_lib",
     ],
 )
